@@ -36,7 +36,7 @@ this.pantalla_imagen = mainActivity; //gurdo un referencia
         {
             Log.d("MIAPP", "Descargando . . .");
             url = new URL(params[0]);
-            httpConn = (HttpURLConnection) url.openConnection();
+            httpConn = (HttpURLConnection) url.openConnection();// por defecto es GET
 
             respuesta = httpConn.getResponseCode();//status code
             if (respuesta == HttpURLConnection.HTTP_OK)//si es 200 es que ha ido bien
